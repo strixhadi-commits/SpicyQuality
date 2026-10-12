@@ -1,0 +1,21 @@
+{
+  "name": "spicetify-audio-quality",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Spicetify extension: playback-quality pill (single plain JS file, no runtime dependencies) with tests",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test \"test/**/*.test.js\"",
+    "coverage": "node --test --experimental-test-coverage --test-coverage-include=audio-quality.js \"test/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "acorn": "^8.19.0",
+    "acorn-walk": "^8.3.0",
+    "jsdom": "^30.1.2",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
